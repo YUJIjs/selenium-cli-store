@@ -16,31 +16,31 @@ https://nodejs.org/en/download/
 
 
 ## Downoad and install selenium-side-runner
-`
+```
 npm install -g selenium-side-runner
-`
-`
+```
+```
 npm install -g chromedriver@116
-`
-`
+```
+```
 selenium-side-runner -c "browserName=chrome" xxxx.side 
-`
+```
 
 ## Downoad and install pip 
 You can install pip module from URL. 
 https://bootstrap.pypa.io/get-pip.py
 
-`
+```
 Python get-pip.py
-`
-`
+```
+```
 Python -m pip -V
-`
+```
 
 ## Downoad and install pytest
-`
+```
 pip install pytest
-`
+```
 ## Downoad selenium-IDE from Chrome　extensions
 ![Alt text](/image/selenium.png)
 
