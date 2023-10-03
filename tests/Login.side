@@ -1,0 +1,148 @@
+{
+  "id": "17cdf1fb-a053-498b-89c7-481103eb01aa",
+  "version": "2.0",
+  "name": "Login",
+  "url": "https://github.co.jp/",
+  "tests": [{
+    "id": "4b3dce0e-3def-484e-b009-377e7df90773",
+    "name": "github login",
+    "commands": [{
+      "id": "1ba91eca-313b-4284-98bc-82192d724277",
+      "comment": "",
+      "command": "open",
+      "target": "https://github.co.jp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d14a53d-83bd-4995-8d35-7e3c015cd2fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c005603-017f-44b7-bd9f-129b8629253f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=サインイン",
+      "targets": [
+        ["linkText=サインイン", "linkText"],
+        ["css=.d-lg-flex > .mr-3", "css:finder"],
+        ["xpath=(//a[contains(text(),'サインイン')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://github.com/login')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2bdba1a-98dd-4a1a-b8e0-03a6c6061417",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a9200c3-64e4-4a9b-b445-962e4344468c",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${LOGIN_NAME}"
+    }, {
+      "id": "ce2465d4-4ef4-4da7-b0dc-e572c499ee7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8340b4e-b0ff-4195-8b09-1e1820c769b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "${PASSWORD}"
+    }, {
+      "id": "98760d06-0e2e-4d6a-b3b5-e2619afacbcd",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input[13]", "xpath:idRelative"],
+        ["xpath=//input[13]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9b4c33a-4cfd-4877-83f4-449d6af41ee7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input[13]", "xpath:idRelative"],
+        ["xpath=//input[13]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c686d4b6-04b8-47a9-a11f-44fcd5f6e5cc",
+    "name": "store",
+    "commands": [{
+      "id": "324380d1-c25f-405e-9914-c883627756c7",
+      "comment": "",
+      "command": "store",
+      "target": "${LOGIN_NAME}",
+      "targets": [],
+      "value": "hoge"
+    }, {
+      "id": "a71c07ab-5ff9-4d58-9e5a-5fc24aa8e7ee",
+      "comment": "",
+      "command": "store",
+      "target": "${PASSWORD}",
+      "targets": [],
+      "value": "hoge"
+    }]
+  }],
+  "suites": [{
+    "id": "6b3e1bb6-db5b-47c0-a026-5d8b583e7ed8",
+    "name": "Login tests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c686d4b6-04b8-47a9-a11f-44fcd5f6e5cc", "4b3dce0e-3def-484e-b009-377e7df90773"]
+  }],
+  "urls": [],
+  "plugins": []
+}
