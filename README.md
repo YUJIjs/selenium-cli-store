@@ -41,6 +41,6 @@ Python -m pip -V
 ```
 pip install pytest
 ```
-## Downoad selenium-IDE from Chrome　extensions
+## Downoad selenium-IDE from Chrome extensions
 ![Alt text](/image/selenium.png)
 
